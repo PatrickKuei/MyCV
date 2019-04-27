@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <title>My resume</title>    
+     <title>Patrick CV</title>    
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       <link rel="stylesheet" href="custom.css">
@@ -44,29 +44,39 @@
             border-top: 0px;
             height: 6px;
         }
-#ctn {
-  position: relative;
-  height: 60px;
-}
+	#ctn {
+	  position: relative;
+	  height: 60px;
+	}
 
-#ctn a {
-  position: absolute;
-  left: 0px;
-  top: -60px;
-}
+	#ctn a {
+	  position: absolute;
+ 	 left: 0px;
+ 	 top: -60px;
+	}
+
+	a.downline::after {
+	  display:block;
+	  content:"";
+	  border-bottom: solid 3px #019fb6;
+	  transform: scaleX(0);
+	  transition: transform 250ms ease-in-out;
+	}
+
+	a.downline:hover::after {
+	  transform: scaleX(1);
+	}
         
     </style>
     
       
   </head>
   <body>
-      
-      
-      <div>
-        <p>Patrick</p>
-      </div>
-      
-      
+  
+	<div style="margin:20px 10px 20px 10px;"> 
+	  <a style="text-decoration: none;" href=""><b><h5>Patrick Yang</h5></b></a>
+
+	</div>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
           
           <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
@@ -75,22 +85,21 @@
           
           <div class="collapse navbar-collapse" id="collapse_target">
           
-            <a class="navbar-brand" href=""><i class="far fa-copy"></i></a>
 
-            <span class="navbar-text"><a style="text-decoration: none;" href=""><b style="margin-right: 30px;">Patrick Yang</b></a></span>
+            <span class="navbar-text"></span>
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link downline" href="#about">about</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#workexperience">Work Experience</a>
+                    <a class="nav-link downline" href="#workexperience">workexperience</a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
+                    <a class="nav-link downline" href="#education">education</a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link" href="#languages">Skills, Activities & Interests</a>
+                    <a class="nav-link downline" href="#languages">languages</a>
                 </li>   
             </ul>
             </div>
